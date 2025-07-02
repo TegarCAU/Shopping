@@ -1,0 +1,723 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Women's Collection - Clothing</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+     <!-- Header -->
+     <header class="header">
+      <div class="header-top">
+        Gratis ongkir sampai Rp 1.600.000 | 30-hari kembalian
+      </div>
+      <div class="header-main">
+        <div class="container">
+          <div class="header-content">
+            <!-- Mobile menu button -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="4" x2="20" y1="12" y2="12"></line>
+                <line x1="4" x2="20" y1="6" y2="6"></line>
+                <line x1="4" x2="20" y1="18" y2="18"></line>
+              </svg>
+            </button>
+
+            <!-- Logo -->
+            <div class="logo">
+              <a href="index.html">Clothing</a>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <nav class="nav-desktop">
+              <a
+                href="women.html"
+                class="nav-link"
+                style="
+                  color: var(--amber-900);
+                  border-bottom: 2px solid var(--amber-900);
+                "
+                >Women</a
+              >
+              <a href="men.html" class="nav-link">Men</a>
+              <a href="accessories.html" class="nav-link">Accessories</a>
+              <a href="sale.html" class="nav-link">Sale</a>
+              <a href="about.html" class="nav-link">About</a>
+            </nav>
+
+            <!-- Right side icons -->
+            <div class="header-actions">
+              <button class="icon-btn search-btn">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <path d="m21 21-4.3-4.3"></path>
+                </svg>
+              </button>
+              <button class="icon-btn" id="wishlistBtn">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                  ></path>
+                </svg>
+              </button>
+              <button class="icon-btn" id="userBtn">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </button>
+              <button class="icon-btn cart-btn" id="cartBtn">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"
+                  ></path>
+                  <line x1="3" x2="21" y1="6" y2="6"></line>
+                  <path d="M16 10a4 4 0 0 1-8 0"></path>
+                </svg>
+                <span class="cart-count" id="cartCount">0</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Mobile Navigation -->
+          <nav class="nav-mobile" id="mobileNav">
+            <a href="women.html" class="nav-link">Women</a>
+            <a href="men.html" class="nav-link">Men</a>
+            <a href="accessories.html" class="nav-link">Accessories</a>
+            <a href="sale.html" class="nav-link">Sale</a>
+            <a href="about.html" class="nav-link">About</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- Page Content -->
+    <div class="container" style="padding: 2rem">
+      <!-- Breadcrumb -->
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-separator">/</span>
+        <span style="color: var(--amber-900)">Women's Collection</span>
+      </div>
+
+      <!-- Page Header -->
+      <div style="margin-bottom: 2rem">
+        <h1
+          style="
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--amber-900);
+            margin-bottom: 1rem;
+          "
+        >
+          Women's Collection
+        </h1>
+        <p style="color: var(--amber-700); font-size: 1.125rem">
+          Temukan koleksi busana wanita eksklusif kami yang menampilkan gaun elegan, sweter nyaman, dan pakaian luar yang bergaya.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 250px 1fr; gap: 2rem">
+        <!-- Filters Sidebar -->
+        <div class="filters-sidebar">
+          <div
+            style="
+              background-color: var(--amber-50);
+              padding: 1.5rem;
+              border-radius: 0.5rem;
+              position: sticky;
+              top: 6rem;
+            "
+          >
+            <h3
+              style="
+                font-size: 1.125rem;
+                font-weight: 600;
+                color: var(--amber-900);
+                margin-bottom: 1.5rem;
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+              "
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="4" x2="4" y1="21" y2="14"></line>
+                <line x1="4" x2="4" y1="10" y2="3"></line>
+                <line x1="12" x2="12" y1="21" y2="12"></line>
+                <line x1="12" x2="12" y1="8" y2="3"></line>
+                <line x1="20" x2="20" y1="21" y2="16"></line>
+                <line x1="20" x2="20" y1="12" y2="3"></line>
+                <line x1="1" x2="7" y1="14" y2="14"></line>
+                <line x1="9" x2="15" y1="8" y2="8"></line>
+                <line x1="17" x2="23" y1="16" y2="16"></line>
+              </svg>
+              Filters
+            </h3>
+
+            <!-- Price Range -->
+            <div style="margin-bottom: 2rem">
+              <h4
+                style="
+                  font-weight: 600;
+                  color: var(--amber-900);
+                  margin-bottom: 1rem;
+                "
+              >
+                Price Range
+              </h4>
+              <input
+                type="range"
+                id="priceRange"
+                min="0"
+                max="7500000"
+                value="7500000"
+                class="slider"
+                style="width: 100%; margin-bottom: 0.5rem"
+              />
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  font-size: 0.875rem;
+                  color: var(--amber-700);
+                "
+              >
+                <span>Rp 0</span>
+                <span id="priceValue">Rp 7,500,000</span>
+              </div>
+            </div>
+
+            <!-- Sizes -->
+            <div style="margin-bottom: 2rem">
+              <h4
+                style="
+                  font-weight: 600;
+                  color: var(--amber-900);
+                  margin-bottom: 1rem;
+                "
+              >
+                Size
+              </h4>
+              <div style="display: flex; flex-direction: column; gap: 0.75rem">
+                <label
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                    color: var(--amber-800);
+                    cursor: pointer;
+                  "
+                >
+                  <input type="checkbox" class="checkbox" value="XS" />
+                  XS
+                </label>
+                <label
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                    color: var(--amber-800);
+                    cursor: pointer;
+                  "
+                >
+                  <input type="checkbox" class="checkbox" value="S" />
+                  S
+                </label>
+                <label
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                    color: var(--amber-800);
+                    cursor: pointer;
+                  "
+                >
+                  <input type="checkbox" class="checkbox" value="M" />
+                  M
+                </label>
+                <label
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                    color: var(--amber-800);
+                    cursor: pointer;
+                  "
+                >
+                  <input type="checkbox" class="checkbox" value="L" />
+                  L
+                </label>
+                <label
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                    color: var(--amber-800);
+                    cursor: pointer;
+                  "
+                >
+                  <input type="checkbox" class="checkbox" value="XL" />
+                  XL
+                </label>
+              </div>
+            </div>
+
+            <!-- Colors -->
+            <div style="margin-bottom: 2rem">
+              <h4
+                style="
+                  font-weight: 600;
+                  color: var(--amber-900);
+                  margin-bottom: 1rem;
+                "
+              >
+                Color
+              </h4>
+              <div style="display: flex; flex-direction: column; gap: 0.75rem">
+                <label
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                    color: var(--amber-800);
+                    cursor: pointer;
+                  "
+                >
+                  <input type="checkbox" class="checkbox" value="Black" />
+                  Black
+                </label>
+                <label
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                    color: var(--amber-800);
+                    cursor: pointer;
+                  "
+                >
+                  <input type="checkbox" class="checkbox" value="Brown" />
+                  Brown
+                </label>
+                <label
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                    color: var(--amber-800);
+                    cursor: pointer;
+                  "
+                >
+                  <input type="checkbox" class="checkbox" value="Cream" />
+                  Cream
+                </label>
+                <label
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                    color: var(--amber-800);
+                    cursor: pointer;
+                  "
+                >
+                  <input type="checkbox" class="checkbox" value="Floral" />
+                  Floral
+                </label>
+              </div>
+            </div>
+
+            <!-- Clear Filters -->
+            <button
+              class="btn btn-outline"
+              style="width: 100%"
+              onclick="clearFilters()"
+            >
+              Clear All Filters
+            </button>
+          </div>
+        </div>
+
+        <!-- Products Section -->
+        <div>
+          <!-- Toolbar -->
+          <div
+            style="
+              display: flex;
+              justify-content: between;
+              align-items: center;
+              margin-bottom: 2rem;
+              padding: 1rem;
+              background-color: var(--gray-100);
+              border-radius: 0.5rem;
+            "
+          >
+            <div style="display: flex; align-items: center; gap: 1rem">
+              <span style="color: var(--amber-700); font-size: 0.875rem"
+                >Sort by:</span
+              >
+              <select id="sortSelect" class="select" style="width: 200px">
+                <option value="featured">Featured</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+                <option value="name">Name A-Z</option>
+                <option value="rating">Highest Rated</option>
+              </select>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.5rem">
+              <button
+                id="gridView"
+                class="btn btn-primary"
+                style="padding: 0.5rem"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect width="7" height="7" x="3" y="3" rx="1"></rect>
+                  <rect width="7" height="7" x="14" y="3" rx="1"></rect>
+                  <rect width="7" height="7" x="14" y="14" rx="1"></rect>
+                  <rect width="7" height="7" x="3" y="14" rx="1"></rect>
+                </svg>
+              </button>
+              <button
+                id="listView"
+                class="btn btn-outline"
+                style="padding: 0.5rem"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="8" x2="21" y1="6" y2="6"></line>
+                  <line x1="8" x2="21" y1="12" y2="12"></line>
+                  <line x1="8" x2="21" y1="18" y2="18"></line>
+                  <line x1="3" x2="3.01" y1="6" y2="6"></line>
+                  <line x1="3" x2="3.01" y1="12" y2="12"></line>
+                  <line x1="3" x2="3.01" y1="18" y2="18"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Products Grid -->
+          <div class="products-grid" id="productsContainer">
+            <!-- Products will be loaded by JavaScript -->
+          </div>
+
+          <!-- Pagination -->
+          <div class="pagination" style="margin-top: 3rem">
+            <button class="pagination-btn" disabled>&laquo;</button>
+            <button class="pagination-btn active">1</button>
+            <button class="pagination-btn">2</button>
+            <button class="pagination-btn">3</button>
+            <button class="pagination-btn">&raquo;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <!-- User Modal -->
+     <div class="modal" id="userModal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Account</h3>
+          <button class="modal-close" id="closeUserModal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="tabs">
+            <button class="tab-btn active" id="loginTab">Login</button>
+            <button class="tab-btn" id="signupTab">Sign Up</button>
+          </div>
+          <div id="loginContent">
+            <form id="loginForm">
+              <div class="form-group">
+                <label for="loginEmail">Email</label>
+                <input type="email" id="loginEmail" required>
+              </div>
+              <div class="form-group">
+                <label for="loginPassword">Password</label>
+                <input type="password" id="loginPassword" required>
+              </div>
+              <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+          </div>
+          <div id="signupContent" class="hidden">
+            <form id="signupForm">
+              <div class="form-group">
+                <label for="signupEmail">Email</label>
+                <input type="email" id="signupEmail" required>
+              </div>
+              <div class="form-group">
+                <label for="signupPassword">Password</label>
+                <input type="password" id="signupPassword" required>
+              </div>
+              <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" required>
+              </div>
+              <button type="submit" class="btn btn-primary">Sign Up</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Wishlist Modal -->
+    <div class="modal" id="wishlistModal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>My Wishlist</h3>
+          <button class="modal-close" id="closeWishlistModal">&times;</button>
+        </div>
+        <div class="modal-body" id="wishlistItemsContainer">
+          <!-- Wishlist items will be dynamically inserted here -->
+          <p class="empty-wishlist-message" style="text-align: center; padding: 20px; display: none;">Your wishlist is currently empty.</p>
+        </div>
+        <!-- Optional footer for actions like "Clear All" -->
+        <!--
+        <div class="modal-footer">
+            <button class="btn btn-danger" id="clearWishlistBtn">Clear Wishlist</button>
+        </div>
+        -->
+      </div>
+    </div>
+
+    <!-- Search Modal -->
+    <div class="modal" id="searchModal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Search Products</h3>
+          <button class="modal-close" id="closeSearchModal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <input type="text" id="searchInput" class="search-input-modal" placeholder="Search for products...">
+          <div id="searchResultsContainer" class="search-results-container"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div class="modal" id="cartModal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Shopping Cart</h3>
+          <button class="modal-close" id="closeCart">&times;</button>
+        </div>
+        <div class="modal-body" id="cartItems">
+          <!-- Cart items will be displayed here -->
+        </div>
+        <div class="modal-footer">
+          <div class="cart-total" id="cartTotal">Total: $0.00</div>
+          <button class="btn btn-primary">Checkout</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      // Add our initialization code to the existing DOMContentLoaded event listener
+      document.addEventListener("DOMContentLoaded", function () {
+        // Load women's products
+        loadWomensProducts();
+        initFilters();
+        initViewToggle();
+        
+        // Highlight current page in navigation
+        const currentPath = window.location.pathname;
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+          if (link.getAttribute('href') === currentPath) {
+            link.classList.add('active');
+          }
+        });
+      });
+
+      // Add our initialization code to the existing DOMContentLoaded event listener
+      document.addEventListener("DOMContentLoaded", function () {
+        // Initialize user button
+        initUserButton();
+      });
+
+      function loadWomensProducts() {
+        const container = document.getElementById("productsContainer");
+        const womensProducts = getProductsByCategory("women");
+        container.innerHTML = womensProducts
+          .map((product) => createProductCard(product))
+          .join("");
+      }
+
+      function initFilters() {
+        const priceRange = document.getElementById("priceRange");
+        const priceValue = document.getElementById("priceValue");
+        const sortSelect = document.getElementById("sortSelect");
+
+        priceRange.addEventListener("input", function () {
+          const value = parseInt(this.value);
+          priceValue.textContent = "Rp " + value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+          filterProducts();
+        });
+
+        sortSelect.addEventListener("change", filterProducts);
+
+        // Size and color checkboxes
+        document.querySelectorAll(".checkbox").forEach((checkbox) => {
+          checkbox.addEventListener("change", filterProducts);
+        });
+      }
+
+      function filterProducts() {
+        const priceRange = document.getElementById("priceRange").value;
+        const sortBy = document.getElementById("sortSelect").value;
+        const selectedSizes = Array.from(
+          document.querySelectorAll(
+            '.checkbox[value="XS"], .checkbox[value="S"], .checkbox[value="M"], .checkbox[value="L"], .checkbox[value="XL"]',
+          ),
+        )
+          .filter((cb) => cb.checked)
+          .map((cb) => cb.value);
+        const selectedColors = Array.from(
+          document.querySelectorAll(
+            '.checkbox[value="Black"], .checkbox[value="Brown"], .checkbox[value="Cream"], .checkbox[value="Floral"]',
+          ),
+        )
+          .filter((cb) => cb.checked)
+          .map((cb) => cb.value);
+
+        let filtered = getProductsByCategory("women");
+
+        // Apply filters
+        filtered = filtered.filter(
+          (product) => product.price <= parseInt(priceRange) / 15000, // Convert IDR to USD
+        );
+
+        if (selectedSizes.length > 0) {
+          filtered = filtered.filter(
+            (product) =>
+              product.sizes &&
+              product.sizes.some((size) => selectedSizes.includes(size)),
+          );
+        }
+
+        if (selectedColors.length > 0) {
+          filtered = filtered.filter(
+            (product) =>
+              product.colors &&
+              product.colors.some((color) => selectedColors.includes(color)),
+          );
+        }
+
+        // Apply sorting
+        filtered = sortProducts(filtered, sortBy);
+
+        // Update display
+        const container = document.getElementById("productsContainer");
+        container.innerHTML = filtered
+          .map((product) => createProductCard(product))
+          .join("");
+      }
+
+      function clearFilters() {
+        document.getElementById("priceRange").value = 7500000;
+        document.getElementById("priceValue").textContent = "Rp 7,500,000";
+        document.getElementById("sortSelect").value = "featured";
+        document
+          .querySelectorAll(".checkbox")
+          .forEach((cb) => (cb.checked = false));
+        loadWomensProducts();
+      }
+
+      function initViewToggle() {
+        const gridView = document.getElementById("gridView");
+        const listView = document.getElementById("listView");
+        const container = document.getElementById("productsContainer");
+
+        gridView.addEventListener("click", function () {
+          container.className = "products-grid";
+          gridView.className = "btn btn-primary";
+          listView.className = "btn btn-outline";
+        });
+
+        listView.addEventListener("click", function () {
+          container.className = "products-list";
+          container.style.display = "flex";
+          container.style.flexDirection = "column";
+          container.style.gap = "1rem";
+          gridView.className = "btn btn-outline";
+          listView.className = "btn btn-primary";
+        });
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Clothing</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-top">
+        Gratis ongkir sampai Rp 1.600.000 | 30-hari kembalian
+      </div>
+      <div class="header-main">
+        <div class="container">
+          <div class="header-content">
+            <!-- Mobile menu button -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="4" x2="20" y1="12" y2="12"></line>
+                <line x1="4" x2="20" y1="6" y2="6"></line>
+                <line x1="4" x2="20" y1="18" y2="18"></line>
+              </svg>
+            </button>
+
+            <!-- Logo -->
+            <div class="logo">
+              <a href="index.html">Clothing</a>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <nav class="nav-desktop">
+              <a href="women.html" class="nav-link">Women</a>
+              <a href="men.html" class="nav-link">Men</a>
+              <a href="accessories.html" class="nav-link">Accessories</a>
+              <a href="sale.html" class="nav-link">Sale</a>
+              <a href="about.html" class="nav-link active">About</a>
+            </nav>
+
+            <!-- Header Actions -->
+            <div class="header-actions">
+              <button class="icon-btn search-btn">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <path d="m21 21-4.3-4.3"></path>
+                </svg>
+              </button>
+              <button class="icon-btn" id="wishlistBtn">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                  ></path>
+                </svg>
+              </button>
+              <button class="icon-btn" id="userBtn">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </button>
+              <button class="icon-btn cart-btn" id="cartBtn">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"
+                  ></path>
+                  <line x1="3" x2="21" y1="6" y2="6"></line>
+                  <path d="M16 10a4 4 0 0 1-8 0"></path>
+                </svg>
+                <span class="cart-count" id="cartCount">0</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <nav class="nav-mobile" id="mobileNav">
+          <a href="women.html" class="nav-link">Wanita</a>
+          <a href="men.html" class="nav-link">Pria</a>
+          <a href="accessories.html" class="nav-link">Aksesoris</a>
+          <a href="sale.html" class="nav-link">Promo</a>
+          <a href="about.html" class="nav-link active">About Us</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about-section">
+      <div class="container">
+        <!-- Hero Section -->
+        <div class="about-hero" style="background: linear-gradient(135deg, var(--amber-50), var(--amber-100)); padding: 4rem 0; border-radius: 0 0 2rem 2rem;">
+          <p class="section-description" style="color: var(--amber-800); max-width: 600px; margin: 0 auto; text-align: center; font-size: 1.25rem; line-height: 1.6;">
+            Temukan cerita inspiratif kami tentang passion, kualitas terbaik, dan inovasi di dunia fashion yang terus berkembang
+          </p>
+        </div>
+
+        <div class="about-content">
+          <!-- Company Story -->
+          <div class="about-story" style="margin: 4rem 0;">
+            <div class="about-grid">
+              <div class="about-image" style="grid-column: 1;">
+                <div class="about-image-container" style="
+                  aspect-ratio: 1;
+                  border-radius: 1.5rem;
+                  overflow: hidden;
+                  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+                  transition: transform 0.3s ease, box-shadow 0.3s ease;
+                  cursor: pointer;
+                " onmouseenter="this.style.transform = 'scale(1.02)';" onmouseleave="this.style.transform = 'scale(1)';">
+                  <img src="https://interiordesign.id/wp-content/uploads/2019/02/1-min-3.jpg" alt="Cerita Kami" style="
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: opacity 0.3s ease;
+                  " onmouseenter="this.style.opacity = '0.9';" onmouseleave="this.style.opacity = '1';">
+                </div>
+              </div>
+              <div class="about-text" style="
+                grid-column: 2;
+                padding: 4rem 2rem;
+              ">
+                <div class="about-text-content" style="
+                  max-width: 600px;
+                  margin: 0 auto;
+                ">
+                  <p style="
+                    margin-bottom: 1.5rem;
+                    font-size: 1.25rem;
+                    line-height: 1.8;
+                    color: var(--amber-800);
+                  ">
+                    <span style="
+                      color: var(--amber-900);
+                      font-weight: 700;
+                      font-size: 1.5rem;
+                      display: block;
+                      margin-bottom: 0.5rem;
+                    ">2025</span>
+                    Didirikan dengan visi untuk merevolusi fashion
+                  </p>
+                  <p style="
+                    margin-bottom: 2rem;
+                    font-size: 1.25rem;
+                    line-height: 1.8;
+                    color: var(--amber-800);
+                  ">
+                    Kami memulai sebagai butik kecil dengan mimpi besar - untuk menciptakan pakaian berkualitas yang abadi yang memberdayakan orang untuk mengekspresikan gaya unik mereka.
+                  </p>
+                  <p style="
+                    margin-bottom: 0;
+                    font-size: 1.25rem;
+                    line-height: 1.8;
+                    color: var(--amber-800);
+                  ">
+                    Hari ini, kami telah berkembang menjadi destinasi fashion yang dipercaya, menawarkan koleksi pakaian dan aksesori yang tercurat dengan hati-hati yang menginspirasi kepercayaan diri dan kreativitas.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Our Values -->
+          <div class="about-values" style="margin: 4rem 0;">
+            <h3 class="about-subtitle" style="color: var(--amber-900); margin-bottom: 2rem; text-align: center;">Nilai Kami</h3>
+            <div class="values-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+              <div class="value-card" style="background: var(--amber-50); padding: 2rem; border-radius: 1rem; text-align: center;">
+                <div class="value-icon" style="font-size: 2rem; color: var(--amber-600); margin-bottom: 1rem;">⭐</div>
+                <h4 style="color: var(--amber-900); margin-bottom: 1rem;">Kualitas Terbaik</h4>
+                <p style="color: var(--amber-800);">Kami tidak pernah kompromi dengan kualitas. Setiap potongan dibuat dengan bahan terbaik dan perhatian terhadap detail.</p>
+              </div>
+              <div class="value-card" style="background: var(--amber-50); padding: 2rem; border-radius: 1rem; text-align: center;">
+                <div class="value-icon" style="font-size: 2rem; color: var(--amber-600); margin-bottom: 1rem;">🌿</div>
+                <h4 style="color: var(--amber-900); margin-bottom: 1rem;">Kebijakan Lingkungan</h4>
+                <p style="color: var(--amber-800);">Kami berkomitmen pada praktik berkelanjutan, menggunakan bahan ramah lingkungan dan mengurangi dampak lingkungan.</p>
+              </div>
+              <div class="value-card" style="background: var(--amber-50); padding: 2rem; border-radius: 1rem; text-align: center;">
+                <div class="value-icon" style="font-size: 2rem; color: var(--amber-600); margin-bottom: 1rem;">✨</div>
+                <h4 style="color: var(--amber-900); margin-bottom: 1rem;">Inovasi</h4>
+                <p style="color: var(--amber-800);">Kami terus mendorong batasan untuk menciptakan desain unik yang menetapkan tren baru dalam industri fashion.</p>
+              </div>
+              <div class="value-card" style="background: var(--amber-50); padding: 2rem; border-radius: 1rem; text-align: center;">
+                <div class="value-icon" style="font-size: 2rem; color: var(--amber-600); margin-bottom: 1rem;">💡</div>
+                <h4 style="color: var(--amber-900); margin-bottom: 1rem;">Fokus Pelanggan</h4>
+                <p style="color: var(--amber-800);">Kepuasan Anda adalah prioritas kami. Kami mendengar, belajar, dan menyesuaikan untuk memenuhi kebutuhan fashion Anda yang berkembang.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Team Section -->
+          <div class="about-team" style="margin: 4rem 0;">
+            <h3 class="about-subtitle" style="color: var(--amber-900); margin-bottom: 2rem; text-align: center;">Kenali Tim Kami</h3>
+            <div class="team-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+              <div class="team-member" style="text-align: center;">
+                <div class="team-member-image" style="width: 150px; height: 150px; margin: 0 auto 1.5rem; border-radius: 50%; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                  <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG6cEUcWmUq1yZ4cYNWKedBO54dvWG7h13Sw&s" alt="Thanos" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <h4 style="color: var(--amber-900); margin-bottom: 0.5rem;">Thanos</h4>
+                <p style="color: var(--amber-700);">Pendiri & CEO</p>
+                <p style="color: var(--amber-600); font-size: 0.875rem; margin-top: 0.5rem;">Pemimpin visioner dengan passion untuk fashion dan strategi bisnis</p>
+              </div>
+              <div class="team-member" style="text-align: center;">
+                <div class="team-member-image" style="width: 150px; height: 150px; margin: 0 auto 1.5rem; border-radius: 50%; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                  <img src="https://t3.ftcdn.net/jpg/01/26/77/44/360_F_126774473_owGnxkviYhvDovg6AsWO9gcGlqjk5eqj.jpg" alt="Alien" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <h4 style="color: var(--amber-900); margin-bottom: 0.5rem;">Alien</h4>
+                <p style="color: var(--amber-700);">Direktur Kreatif</p>
+                <p style="color: var(--amber-600); font-size: 0.875rem; margin-top: 0.5rem;">Desainer berbakat dengan pandangan tajam untuk tren dan inovasi</p>
+              </div>
+              <div class="team-member" style="text-align: center;">
+                <div class="team-member-image" style="width: 150px; height: 150px; margin: 0 auto 1.5rem; border-radius: 50%; overflow: hidden; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                  <img src="https://pics.craiyon.com/2024-01-10/TvlRGJDhR9-J2TbOqngHpw.webp" alt="Robot" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <h4 style="color: var(--amber-900); margin-bottom: 0.5rem;">Robot</h4>
+                <p style="color: var(--amber-700);">Kepala Desain</p>
+                <p style="color: var(--amber-600); font-size: 0.875rem; margin-top: 0.5rem;">Ahli dalam desain fashion dan pengembangan produk</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-newsletter">
+        <div class="container">
+          <div class="newsletter-content">
+            <h3 class="newsletter-title">Tetap Stylish</h3>
+            <p class="newsletter-description">
+              Berlangganan newsletter kami dan jadilah yang pertama tahu tentang
+              koleksi terbaru, penawaran eksklusif, dan tips fashion.
+            </p>
+            <div class="newsletter-form">
+              <input
+                type="email"
+                placeholder="Masukkan email Anda"
+                class="newsletter-input"
+              />
+              <button class="btn btn-newsletter">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-main">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-brand">
+              <a href="index.html" class="footer-logo">Clothing</a>
+              <p class="footer-description">
+                Destinasi fashion utama Anda. Kami menyajikan koleksi pakaian dan aksesori terbaik untuk membantu Anda mengekspresikan gaya unik Anda.
+              </p>
+              <div class="footer-contact">
+                <div class="contact-item">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                    ></path>
+                  </svg>
+                  <span>+62 812-1974-8753</span>
+                </div>
+                <div class="contact-item">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                    ></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  <span>tegarcau34@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                    ></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  <span>123 Fashion St, Style City, SC 12345</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer-links">
+              <h4 class="footer-heading">Company</h4>
+              <ul class="footer-list">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-links">
+              <h4 class="footer-heading">Customer Service</h4>
+              <ul class="footer-list">
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Size Guide</a></li>
+                <li><a href="#">Shipping Information</a></li>
+                <li><a href="#">Returns</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-links">
+              <h4 class="footer-heading">Legal</h4>
+              <ul class="footer-list">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#">Cookie Policy</a></li>
+                <li><a href="#">Accessibility</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="footer-bottom-content">
+            <div class="footer-copyright">
+              © 202 Clothing. All rights reserved.
+            </div>
+            <div class="footer-social">
+              <a href="#" class="social-link">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                  ></path>
+                </svg>
+              </a>
+              <a href="#" class="social-link">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="m16 11.37-4-4L8 11.37"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                  <circle cx="17.5" cy="6.5" r="1.5"></circle>
+                </svg>
+              </a>
+              <a href="#" class="social-link">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+                  ></path>
+                </svg>
+              </a>
+              <a href="#" class="social-link">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polygon points="13,2 3,14 12,14 11,22 21,10 12,10"></polygon>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- User Modal -->
+    <div class="modal" id="userModal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Account</h3>
+          <button class="modal-close" id="closeUserModal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="tabs">
+            <button class="tab-btn active" id="loginTab">Login</button>
+            <button class="tab-btn" id="signupTab">Sign Up</button>
+          </div>
+          <div id="loginContent">
+            <form id="loginForm">
+              <div class="form-group">
+                <label for="loginEmail">Email</label>
+                <input type="email" id="loginEmail" required />
+              </div>
+              <div class="form-group">
+                <label for="loginPassword">Password</label>
+                <input type="password" id="loginPassword" required />
+              </div>
+              <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+          </div>
+          <div id="signupContent" class="hidden">
+            <form id="signupForm">
+              <div class="form-group">
+                <label for="signupEmail">Email</label>
+                <input type="email" id="signupEmail" required />
+              </div>
+              <div class="form-group">
+                <label for="signupPassword">Password</label>
+                <input type="password" id="signupPassword" required />
+              </div>
+              <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" required />
+              </div>
+              <button type="submit" class="btn btn-primary">Sign Up</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Wishlist Modal -->
+    <div class="modal" id="wishlistModal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>My Wishlist</h3>
+          <button class="modal-close" id="closeWishlistModal">&times;</button>
+        </div>
+        <div class="modal-body" id="wishlistItemsContainer">
+          <!-- Wishlist items will be dynamically inserted here -->
+          <p class="empty-wishlist-message" style="text-align: center; padding: 20px; display: none;">
+            Your wishlist is currently empty.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Search Modal -->
+    <div class="modal" id="searchModal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Search Products</h3>
+          <button class="modal-close" id="closeSearchModal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <input type="text" id="searchInput" class="search-input-modal" placeholder="Search for products...">
+        </div>
+      </div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div class="modal" id="cartModal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Shopping Cart</h3>
+          <button class="modal-close" id="closeCartModal">&times;</button>
+        </div>
+        <div class="modal-body" id="cartItemsContainer">
+          <!-- Cart items will be dynamically inserted here -->
+          <p class="empty-cart-message" style="text-align: center; padding: 20px; display: none;">
+            Your cart is empty.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <div class="cart-total">
+            <span>Total:</span>
+            <span id="cartTotal">Rp 0</span>
+          </div>
+          <button class="btn btn-primary" id="checkoutBtn">Proceed to Checkout</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
